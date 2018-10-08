@@ -20,8 +20,8 @@ npm i
 ## Create Indexes
 ```
     use HotelBooking
-    db.rooms.createIndex({ RoomNo: 1, HotelId: 1, Availability: 1 });
-    db.rooms.createIndex({ date: 1, HotelId: 1, });
+    db.rooms.createIndex({ HotelId: 1, RoomNo: 1, Availability: 1 });
+    db.rooms.createIndex({ HotelId: 1, date: 1 });
 
 ```
 
