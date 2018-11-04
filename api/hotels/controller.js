@@ -6,7 +6,7 @@ const { validateParams } = require('./../../libs/validator');
 
 const save = async(req, res) => {
     try {
-        // input validation
+        // input validation new changes
         const validation = validateParams(schema.hotel.save, req.body);
         if (validation.err) {
             res.statusCode = 400;
